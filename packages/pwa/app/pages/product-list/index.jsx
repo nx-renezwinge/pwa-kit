@@ -572,8 +572,8 @@ ProductList.getProps = async ({res, params, location, api}) => {
         searchParams.refine.push(`cgid=${categoryId}`)
     }
 
-    // only search master products
-    searchParams.refine.push('htype=master')
+    // search for master and set products
+    searchParams.refine.push('htype=master|set')
 
     // Set the `cache-control` header values to align with the Commerce API settings.
     if (res) {
