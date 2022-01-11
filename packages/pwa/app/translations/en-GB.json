@@ -1010,11 +1010,17 @@
   "product_view.button.update": {
     "defaultMessage": "Update"
   },
+  "product_view.heading.included_products": {
+    "defaultMessage": "Included products"
+  },
   "product_view.label.quantity": {
     "defaultMessage": "Quantity"
   },
   "product_view.link.full_details": {
     "defaultMessage": "See full details"
+  },
+  "product_view.price.from": {
+    "defaultMessage": "from {price}"
   },
   "profile_card.info.profile_updated": {
     "defaultMessage": "Profile updated"

@@ -61,6 +61,12 @@ export const useProduct = (product) => {
         setQuantity(initialQuantity)
     }, [initialQuantity])
 
+    const type = {
+        master: !!product?.type?.master,
+        variant: !!product?.type?.variant,
+        set: !!product?.type?.set
+    }
+
     return {
         showLoading,
         showInventoryMessage,
@@ -72,6 +78,7 @@ export const useProduct = (product) => {
         variationParams,
         setQuantity,
         variant,
-        stockLevel
+        stockLevel,
+        type
     }
 }
